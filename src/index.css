@@ -1,13 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada&family=Tilt+Warp&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Labrada', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Labrada', serif;
+  font-weight: 46px;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dark-mode{
+  background-color: #333333;
+}
+
+.dark-mode h1{
+  color: #ffffff;
+}
+
+.container{
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+
+}
+.notes-list{
+ 
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.note.new{
+  background-color: #ffb3b3;
+}
+textarea{
+  border:none;
+  resize:none;
+  background-color: #ffb3b3;
+}
+textarea:focus{
+  outline: none;
+}
+.save{
+  font-size: 17px;
+  font-family: 'Labrada', serif;
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 20px 7px 20px;
+}
+.save:hover{
+  background-color: #ededed;
+  cursor: pointer;
+}
+.note{
+  background-color: #d9b3ff;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space:pre-wrap;
+}
+
+.note-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-icon{
+  cursor: pointer;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  font-family: 'Labrada', serif;
+  background-color: rgb(233, 233, 233);
+  border-radius: 50px;
+  padding: 10px;
+  margin-bottom: 1.5em;
+}
+
+.search input{
+  border: none;
+  background-color: transparent;
+}
+
+.search input:focus{
+  outline:none;
 }
